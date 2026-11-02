@@ -1,0 +1,4 @@
+{
+  "required_fields": ["title", "caption", "duration_seconds", "owner"],
+  "forbidden_claims": ["保证", "100%", "效率提升80%"]
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "premium": {
+      "asset_ids": ["A01", "A02", "A03"],
+      "script_template": "完整脚本、三套视觉素材、双渠道投放",
+      "cost_breakdown": {"assets": 4, "script": 5, "distribution": 3},
+      "estimated_hours": 8
+    },
+    "lean": {
+      "asset_ids": ["A01"],
+      "script_template": "精简脚本、单套素材、单渠道投放",
+      "cost_breakdown": {"assets": 2, "script": 3, "distribution": 3},
+      "estimated_hours": 5
+    }
+  }
+}

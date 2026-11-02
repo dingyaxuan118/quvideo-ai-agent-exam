@@ -1,0 +1,12 @@
+{
+  "input": {
+    "question": "要提前多久？",
+    "history": [{"role": "user", "content": "我想申请年假，需要走什么流程？"}]
+  },
+  "output": {"resolved_question": "上下文主题：我想申请年假，需要走什么流程？；当前追问：要提前多久？", "answer": "员工申请年假，应至少提前 3 个工作日在考勤系统中提交申请，并经直属主管批准后方可休假。", "task_status": "answered"},
+  "trace": [
+    {"step": 1, "action": "search_documents", "observation": "结合年假上下文命中 D03"},
+    {"step": 2, "action": "read_excerpt", "observation": "读取 D03"},
+    {"step": 3, "action": "finish", "observation": "answered"}
+  ]
+}

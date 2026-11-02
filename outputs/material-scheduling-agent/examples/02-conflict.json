@@ -1,0 +1,19 @@
+{
+  "input": {"material_id": "M01", "desired_time": "2026-11-01T18:00"},
+  "actual_output": {
+    "review_status": "approved",
+    "risk_reasons": [],
+    "requested_time": "2026-11-01T18:00",
+    "suggested_time": "2026-11-01T19:00",
+    "pending_confirmation": ["请确认替代发布时间"],
+    "draft_save_status": "not_attempted",
+    "task_status": "pending_confirmation",
+    "message": "原时段冲突，建议 2026-11-01T19:00；等待用户确认，未保存草稿。"
+  },
+  "trace": [
+    {"step": 1, "action": "read_material", "arguments": {"material_id": "M01"}, "observation_summary": "读取到完整素材 M01", "next_action_reason": "先读取素材元数据"},
+    {"step": 2, "action": "check_rules", "arguments": {"material_id": "M01"}, "observation_summary": "approved，无风险", "next_action_reason": "素材存在，执行规则审核"},
+    {"step": 3, "action": "query_slots", "arguments": {"desired_time": "2026-11-01T18:00"}, "observation_summary": "18:00 占用；候选为 19:00、20:00、次日 10:00", "next_action_reason": "审核通过，查询时段"},
+    {"step": 4, "action": "finish", "arguments": {"status": "pending_confirmation", "suggested_time": "2026-11-01T19:00"}, "observation_summary": "pending_confirmation", "next_action_reason": "原时段冲突，替代时段未经用户确认"}
+  ]
+}

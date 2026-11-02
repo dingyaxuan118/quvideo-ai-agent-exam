@@ -1,0 +1,10 @@
+{
+  "input": {"question": "VideoPro 支持哪些字幕？", "fail_search_once": true},
+  "output": {"answer": "VideoPro 支持导入 SRT 和 VTT 字幕文件，文件不得超过 5 MB；不支持 ASS。", "task_status": "answered"},
+  "trace": [
+    {"step": 1, "action": "search_documents", "observation": "search_service_timeout，retryable=true"},
+    {"step": 2, "action": "search_documents", "observation": "重试命中 D04"},
+    {"step": 3, "action": "read_excerpt", "observation": "读取 D04"},
+    {"step": 4, "action": "finish", "observation": "answered"}
+  ]
+}

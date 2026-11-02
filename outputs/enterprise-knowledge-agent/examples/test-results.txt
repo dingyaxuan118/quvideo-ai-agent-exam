@@ -1,0 +1,4 @@
+Command: pytest -q
+Result: 26 passed
+
+Environment note: the project directory itself contains no virtual environment or cache.

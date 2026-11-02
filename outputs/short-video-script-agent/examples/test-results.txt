@@ -1,0 +1,2 @@
+Command: pytest -q -p no:cacheprovider
+Result: 31 passed

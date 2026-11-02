@@ -1,0 +1,26 @@
+Command:
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -v
+
+Result:
+test_budget_overrun_replans_to_lean ... ok
+test_deadline_overrun_replans_to_lean ... ok
+test_duplicate_is_idempotent ... ok
+test_duplicate_returns_existing_plan_when_new_run_replans_differently ... ok
+test_max_steps_returns_incomplete ... ok
+test_missing_budget_is_incomplete ... ok
+test_missing_deadline_is_incomplete ... ok
+test_non_finite_constraints_are_rejected ... ok
+test_model_cannot_claim_false_success ... ok
+test_model_cannot_save_without_estimate ... ok
+test_model_error_is_reported ... ok
+test_no_feasible_plan_is_incomplete ... ok
+test_normal_plan_uses_premium ... ok
+test_openai_adapter_parses_action ... ok
+test_save_failure_is_explicit ... ok
+test_save_tool_rejects_forged_estimate ... ok
+test_save_tool_rejects_forged_plan_content ... ok
+test_saved_plan_is_success_even_if_finish_step_hits_limit ... ok
+test_tool_failure_recovers_and_keeps_success ... ok
+
+Ran 19 tests in 0.012s
+OK

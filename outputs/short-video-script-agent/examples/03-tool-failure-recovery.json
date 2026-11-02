@@ -1,0 +1,12 @@
+{
+  "input": {"topic": "VideoPro 字幕功能", "target_duration": 30, "fail_estimate_once": true},
+  "output": {"material_source_ids": ["P01"], "task_status": "completed"},
+  "trace": [
+    {"step": 1, "action": "search_materials", "observation": "命中 P01"},
+    {"step": 2, "action": "estimate_duration", "observation": "duration_service_timeout, retryable=true"},
+    {"step": 3, "action": "estimate_duration", "observation": "模型观察失败后重试同一草稿"},
+    {"step": 4, "action": "estimate_duration", "observation": "压缩并再次估算"},
+    {"step": 5, "action": "check_rules", "observation": "passed=true"},
+    {"step": 6, "action": "finish", "observation": "completed"}
+  ]
+}

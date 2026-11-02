@@ -1,0 +1,24 @@
+Command:
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -v
+
+Result:
+test_confirmed_alternative_can_be_saved ... ok
+test_conflict_requires_confirmation ... ok
+test_duplicate_request_is_idempotent ... ok
+test_invalid_time_is_reported ... ok
+test_max_steps_returns_incomplete ... ok
+test_missing_material_data_is_incomplete ... ok
+test_model_cannot_claim_false_success ... ok
+test_model_cannot_save_before_review ... ok
+test_model_error_returns_failed_result ... ok
+test_normal_schedule_saves_draft ... ok
+test_openai_adapter_parses_action ... ok
+test_persisted_draft_overrides_wrong_final_status ... ok
+test_rule_risk_blocks_scheduling ... ok
+test_save_failure_is_reported ... ok
+test_second_confirmed_alternative_can_be_saved ... ok
+test_tool_rejects_unreviewed_risky_material ... ok
+test_unknown_slot_is_not_treated_as_available ... ok
+
+Ran 17 tests in 0.011s
+OK

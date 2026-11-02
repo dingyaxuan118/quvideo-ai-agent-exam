@@ -1,0 +1,10 @@
+{
+  "input": {"theme": "新品推广", "budget": 7, "deadline_hours": 4},
+  "actual_output": {"selected_variant": "lean", "total_cost": 8, "estimated_hours": 5, "save_status": "not_attempted", "task_status": "incomplete", "message": "没有方案能同时满足预算和截止时间，任务未完成。"},
+  "trace": [
+    {"step": 3, "action": "estimate_cost", "arguments": {"variant": "premium"}, "observation_summary": "成本 12 > 7，耗时 8 > 4"},
+    {"step": 4, "action": "generate_script", "arguments": {"variant": "lean"}, "decision_reason": "改用精简方案"},
+    {"step": 5, "action": "estimate_cost", "arguments": {"variant": "lean"}, "observation_summary": "成本 8 > 7，耗时 5 > 4"},
+    {"step": 6, "action": "finish", "observation_summary": "incomplete", "decision_reason": "精简方案仍不满足约束"}
+  ]
+}

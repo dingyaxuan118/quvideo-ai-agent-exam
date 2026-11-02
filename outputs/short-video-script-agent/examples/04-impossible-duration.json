@@ -1,0 +1,9 @@
+{
+  "input": {"topic": "VideoPro 字幕功能", "target_duration": 1},
+  "output": {"risks": ["目标时长过短"], "information_gaps": ["需要放宽时长或减少必须表达的事实"], "task_status": "needs_input"},
+  "trace": [
+    {"action": "estimate_duration", "observation": "首稿超时"},
+    {"action": "estimate_duration", "observation": "保留必要事实的最小稿仍超时"},
+    {"action": "finish", "observation": "明确无法满足"}
+  ]
+}

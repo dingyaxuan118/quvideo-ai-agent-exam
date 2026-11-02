@@ -1,0 +1,12 @@
+{
+  "input": {"theme": "新品推广", "budget": 20, "deadline_hours": 12, "executions": 2},
+  "actual_output": {
+    "first": {"save_status": "saved", "plan_id": "P-947f3e06c2"},
+    "second": {"save_status": "already_saved", "plan_id": "P-947f3e06c2"},
+    "stored_plan_count": 1
+  },
+  "trace": [
+    {"run": 1, "action": "save_plan", "observation_summary": "saved=true, duplicate=false, plan_id=P-947f3e06c2"},
+    {"run": 2, "action": "save_plan", "observation_summary": "saved=true, duplicate=true, plan_id=P-947f3e06c2"}
+  ]
+}

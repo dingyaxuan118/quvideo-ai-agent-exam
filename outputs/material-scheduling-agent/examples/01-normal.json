@@ -1,0 +1,21 @@
+{
+  "input": {"material_id": "M01", "desired_time": "2026-11-01T19:00"},
+  "actual_output": {
+    "review_status": "approved",
+    "risk_reasons": [],
+    "requested_time": "2026-11-01T19:00",
+    "suggested_time": null,
+    "pending_confirmation": [],
+    "draft_save_status": "saved",
+    "task_status": "draft_saved",
+    "message": "审核通过，排期草稿已保存；内容尚未发布。",
+    "draft_id": "D-4811b30d21"
+  },
+  "trace": [
+    {"step": 1, "action": "read_material", "arguments": {"material_id": "M01"}, "observation_summary": "读取到完整素材 M01", "next_action_reason": "先读取素材元数据"},
+    {"step": 2, "action": "check_rules", "arguments": {"material_id": "M01"}, "observation_summary": "approved，无风险", "next_action_reason": "素材存在，执行规则审核"},
+    {"step": 3, "action": "query_slots", "arguments": {"desired_time": "2026-11-01T19:00"}, "observation_summary": "19:00 可用", "next_action_reason": "审核通过，查询时段"},
+    {"step": 4, "action": "save_draft", "arguments": {"material_id": "M01", "requested_time": "2026-11-01T19:00", "scheduled_time": "2026-11-01T19:00", "simulate_failure": false}, "observation_summary": "saved=true, duplicate=false, draft_id=D-4811b30d21", "next_action_reason": "时段可用且边界已确认，仅保存草稿"},
+    {"step": 5, "action": "finish", "arguments": {"status": "draft_saved"}, "observation_summary": "draft_saved", "next_action_reason": "根据真实保存结果结束"}
+  ]
+}

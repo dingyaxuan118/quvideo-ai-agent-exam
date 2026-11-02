@@ -1,0 +1,11 @@
+{
+  "input": {"theme": "新品推广", "budget": 20, "deadline_hours": 12, "simulate_save_failure": true},
+  "actual_output": {"selected_variant": "premium", "total_cost": 12, "estimated_hours": 8, "save_status": "failed", "task_status": "failed", "message": "决策或工具执行失败，任务未完成且未虚报成功。"},
+  "trace": [
+    {"step": 1, "action": "search_assets", "status": "succeeded"},
+    {"step": 2, "action": "generate_script", "status": "succeeded"},
+    {"step": 3, "action": "estimate_cost", "status": "succeeded", "observation_summary": "成本 12，耗时 8"},
+    {"step": 4, "action": "save_plan", "status": "failed", "observation_summary": "plan_store_unavailable"},
+    {"step": 5, "action": "finish", "observation_summary": "failed", "decision_reason": "工具失败且无法恢复"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "brand_rules": {
+    "forbidden_terms": ["最强", "绝对", "100%"],
+    "rules": [
+      {"rule_id": "R01", "type": "require_source_fact", "description": "脚本必须包含至少一条来源素材事实"},
+      {"rule_id": "R02", "type": "reject_unsupported_percentage", "description": "没有效果数据时不得声称百分比效果"},
+      {"rule_id": "R03", "type": "reject_unsupported_claim", "description": "逐条拒绝素材未支持的产品陈述"},
+      {"rule_id": "R04", "type": "forbid_terms", "description": "不得使用绝对化用语"}
+    ]
+  },
+  "materials": [
+    {
+      "material_id": "P01",
+      "product": "VideoPro",
+      "keywords": ["VideoPro", "视频", "字幕", "SRT", "VTT"],
+      "facts": ["VideoPro 支持导入 SRT 和 VTT 字幕文件。", "单个字幕文件不得超过 5 MB。"]
+    },
+    {
+      "material_id": "P02",
+      "product": "VideoPro",
+      "keywords": ["VideoPro", "视频", "裁剪", "画幅", "比例"],
+      "facts": ["VideoPro 可以将视频裁剪为 9:16、1:1 和 16:9 画幅。"]
+    }
+  ]
+}

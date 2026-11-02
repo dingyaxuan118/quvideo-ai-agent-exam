@@ -1,0 +1,9 @@
+{
+  "input": {"topic": "咖啡机维修", "audience": "办公室员工", "platform": "抖音", "target_duration": 30, "style": "简洁"},
+  "output": {"information_gaps": ["缺少主题相关产品素材"], "task_status": "needs_input", "message": "没有找到可支持脚本事实的素材。"},
+  "trace": [
+    {"step": 1, "action": "search_materials", "arguments": {"query": "咖啡机维修"}, "observation": "无结果"},
+    {"step": 2, "action": "search_materials", "arguments": {"query": "咖啡机维修 产品功能"}, "observation": "仍无结果"},
+    {"step": 3, "action": "finish", "observation": "needs_input"}
+  ]
+}

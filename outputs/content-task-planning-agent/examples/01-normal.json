@@ -1,0 +1,10 @@
+{
+  "input": {"theme": "新品推广", "budget": 20, "deadline_hours": 12},
+  "actual_output": {"selected_variant": "premium", "script": "新品推广｜完整脚本、三套视觉素材、双渠道投放", "asset_ids": ["A01", "A02", "A03"], "total_cost": 12, "estimated_hours": 8, "save_status": "saved", "task_status": "plan_saved", "plan_id": "P-947f3e06c2"},
+  "trace": [
+    {"step": 1, "action": "search_assets", "observation_summary": "找到 premium 和 lean", "decision_reason": "先检索可用素材与方案"},
+    {"step": 2, "action": "generate_script", "arguments": {"variant": "premium"}, "observation_summary": "完整脚本生成成功", "decision_reason": "先尝试完整方案"},
+    {"step": 3, "action": "estimate_cost", "arguments": {"variant": "premium"}, "observation_summary": "成本 12，耗时 8", "decision_reason": "估算实际约束"},
+    {"step": 4, "action": "save_plan", "observation_summary": "saved=true, plan_id=P-947f3e06c2", "decision_reason": "预算和截止时间均满足"}
+  ]
+}

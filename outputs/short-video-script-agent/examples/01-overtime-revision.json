@@ -1,0 +1,11 @@
+{
+  "input": {"topic": "VideoPro 字幕功能", "audience": "短视频创作者", "platform": "抖音", "target_duration": 30, "style": "简洁"},
+  "output": {"title": "VideoPro：VideoPro 字幕功能｜给短视频创作者", "estimated_duration": 23.5, "material_source_ids": ["P01"], "task_status": "completed"},
+  "trace": [
+    {"step": 1, "action": "search_materials", "observation": "P01 为最高相关素材"},
+    {"step": 2, "action": "estimate_duration", "observation": "首稿 42.5 秒，超过 30 秒"},
+    {"step": 3, "action": "estimate_duration", "observation": "压缩稿 23.5 秒"},
+    {"step": 4, "action": "check_rules", "observation": "passed=true"},
+    {"step": 5, "action": "finish", "observation": "completed"}
+  ]
+}

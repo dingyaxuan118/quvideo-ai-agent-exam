@@ -1,0 +1,14 @@
+{
+  "input": {"question": "年假要提前多久申请？"},
+  "output": {
+    "answer": "员工申请年假，应至少提前 3 个工作日在考勤系统中提交申请，并经直属主管批准后方可休假。",
+    "citations": [{"document_id": "D03", "version_date": "2025-02-15", "quote": "员工申请年假，应至少提前 3 个工作日在考勤系统中提交申请，并经直属主管批准后方可休假。"}],
+    "information_gaps": [],
+    "task_status": "answered"
+  },
+  "trace": [
+    {"step": 1, "action": "search_documents", "observation": "命中 D03"},
+    {"step": 2, "action": "read_excerpt", "observation": "读取 D03 原文"},
+    {"step": 3, "action": "finish", "observation": "引用校验通过"}
+  ]
+}

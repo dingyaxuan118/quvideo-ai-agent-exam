@@ -1,0 +1,7 @@
+{
+  "input": {"theme": "新品推广", "budget": null, "deadline_hours": 12},
+  "actual_output": {"selected_variant": null, "save_status": "not_attempted", "task_status": "incomplete", "message": "缺少或无效的输入：budget"},
+  "trace": [
+    {"step": "validate_input", "status": "failed", "missing": ["budget"], "tool_calls": 0}
+  ]
+}

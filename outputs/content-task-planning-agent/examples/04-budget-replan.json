@@ -1,0 +1,12 @@
+{
+  "input": {"theme": "新品推广", "budget": 10, "deadline_hours": 12},
+  "actual_output": {"selected_variant": "lean", "total_cost": 8, "estimated_hours": 5, "save_status": "saved", "task_status": "plan_saved", "plan_id": "P-651649eb93"},
+  "trace": [
+    {"step": 1, "action": "search_assets", "observation_summary": "找到 premium 和 lean"},
+    {"step": 2, "action": "generate_script", "arguments": {"variant": "premium"}, "observation_summary": "生成成功"},
+    {"step": 3, "action": "estimate_cost", "arguments": {"variant": "premium"}, "observation_summary": "成本 12 > 预算 10"},
+    {"step": 4, "action": "generate_script", "arguments": {"variant": "lean"}, "decision_reason": "完整方案超预算，重新生成精简方案"},
+    {"step": 5, "action": "estimate_cost", "arguments": {"variant": "lean"}, "observation_summary": "成本 8，耗时 5，满足约束"},
+    {"step": 6, "action": "save_plan", "observation_summary": "saved=true"}
+  ]
+}

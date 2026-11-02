@@ -1,0 +1,15 @@
+{
+  "input": {"question": "办公室咖啡机怎么维修？"},
+  "output": {
+    "answer": "现有企业知识库中没有足以回答该问题的资料。",
+    "citations": [],
+    "information_gaps": ["缺少与咖啡机维修相关的制度或产品文档"],
+    "follow_up_question": "可以提供相关文档名称、产品名称或制度范围吗？",
+    "task_status": "out_of_scope"
+  },
+  "trace": [
+    {"step": 1, "action": "search_documents", "observation": "无结果"},
+    {"step": 2, "action": "search_documents", "observation": "改写后仍无结果"},
+    {"step": 3, "action": "finish", "observation": "报告资料缺口"}
+  ]
+}

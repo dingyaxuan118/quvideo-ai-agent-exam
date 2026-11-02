@@ -1,0 +1,16 @@
+{
+  "input": {"material_id": "M02", "desired_time": "2026-11-01T19:00"},
+  "actual_output": {
+    "review_status": "incomplete",
+    "risk_reasons": ["缺少字段：caption, duration_seconds"],
+    "requested_time": "2026-11-01T19:00",
+    "draft_save_status": "not_attempted",
+    "task_status": "incomplete",
+    "message": "素材信息或可用资源不足，任务未完成。"
+  },
+  "trace": [
+    {"step": 1, "action": "read_material", "arguments": {"material_id": "M02"}, "observation_summary": "素材缺少 caption 和 duration_seconds", "next_action_reason": "先读取素材元数据"},
+    {"step": 2, "action": "check_rules", "arguments": {"material_id": "M02"}, "observation_summary": "incomplete: caption, duration_seconds", "next_action_reason": "素材存在，执行规则审核"},
+    {"step": 3, "action": "finish", "arguments": {"status": "incomplete"}, "observation_summary": "incomplete", "next_action_reason": "关键信息不足，请求补充"}
+  ]
+}

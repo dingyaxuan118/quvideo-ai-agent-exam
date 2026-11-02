@@ -1,0 +1,21 @@
+{
+  "input": {
+    "first_request": {"material_id": "M01", "desired_time": "2026-11-01T20:00"},
+    "repeated_request": {"material_id": "M01", "desired_time": "2026-11-01T20:00"}
+  },
+  "actual_output": {
+    "first": {"draft_save_status": "saved", "task_status": "draft_saved", "draft_id": "D-b1ad84394e"},
+    "repeated": {"draft_save_status": "already_saved", "task_status": "draft_saved", "draft_id": "D-b1ad84394e"},
+    "draft_count_after_two_runs": 1
+  },
+  "trace": [
+    {"run": 1, "step": 1, "action": "read_material", "observation_summary": "读取到完整素材 M01"},
+    {"run": 1, "step": 2, "action": "check_rules", "observation_summary": "approved"},
+    {"run": 1, "step": 3, "action": "query_slots", "observation_summary": "20:00 可用"},
+    {"run": 1, "step": 4, "action": "save_draft", "arguments": {"material_id": "M01", "requested_time": "2026-11-01T20:00", "scheduled_time": "2026-11-01T20:00"}, "observation_summary": "saved=true, duplicate=false, draft_id=D-b1ad84394e"},
+    {"run": 2, "step": 1, "action": "read_material", "observation_summary": "读取到完整素材 M01"},
+    {"run": 2, "step": 2, "action": "check_rules", "observation_summary": "approved"},
+    {"run": 2, "step": 3, "action": "query_slots", "observation_summary": "20:00 可用"},
+    {"run": 2, "step": 4, "action": "save_draft", "arguments": {"material_id": "M01", "requested_time": "2026-11-01T20:00", "scheduled_time": "2026-11-01T20:00"}, "observation_summary": "saved=true, duplicate=true, draft_id=D-b1ad84394e"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "input": {"question": "费用发生后多久内报销？"},
+  "output": {
+    "answer": "检索到的资料存在冲突，目前不能可靠地给出唯一结论。",
+    "citations": [
+      {"document_id": "D01", "version_date": "2025-01-10", "quote": "员工应在费用发生之日起 30 天内提交报销申请及有效票据。逾期申请须由部门负责人书面说明。"},
+      {"document_id": "D02", "version_date": "2025-03-01", "quote": "费用报销申请需要在费用发生后 15 天内提交，申请时应上传清晰的票据影像。"}
+    ],
+    "conflicts": [{"document_ids": ["D01", "D02"], "description": "同一事项规定不一致，缺少适用范围或优先级。"}],
+    "follow_up_question": "请财务或制度负责人确认应适用哪份规定。",
+    "task_status": "needs_clarification"
+  },
+  "trace": [
+    {"step": 1, "action": "search_documents", "observation": "命中 D01、D02"},
+    {"step": 2, "action": "read_excerpt", "observation": "D01：30 天"},
+    {"step": 3, "action": "read_excerpt", "observation": "D02：15 天"},
+    {"step": 4, "action": "finish", "observation": "冲突，需确认"}
+  ]
+}
